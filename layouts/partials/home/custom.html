@@ -27,7 +27,7 @@
   <article class="project-card" aria-labelledby="ytrvx-title">
     <div class="project-card__header">
       <p>{{ if $isIndonesian }}PROYEK UNGGULAN{{ else }}FEATURED PROJECT{{ end }}</p>
-      <span class="project-card__pulse" aria-label="Active"></span>
+      <span class="project-card__pulse" aria-label="{{ if $isIndonesian }}Aktif{{ else }}Active{{ end }}"></span>
     </div>
     <h2 id="ytrvx-title">YTRVX</h2>
     <p>
