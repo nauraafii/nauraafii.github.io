@@ -55,7 +55,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showMoreLinkDest = "docs"
   cardView = true
   cardViewScreenWidth = false
-  layoutBackgroundBlur = true # only used when layout equals background
+  layoutBackgroundBlur = false # not used by the custom homepage
   disableHeroImageFilter = false # only used when layout equals hero
 
 [article]

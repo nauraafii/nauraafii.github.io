@@ -1,46 +1,29 @@
 {{ $isIndonesian := eq .Site.Language.Lang "id" }}
-<section class="site-hero" aria-labelledby="site-hero-title">
-  <div class="site-hero__copy">
-    <p class="site-hero__eyebrow">{{ if $isIndonesian }}PERSONAL SPACE · PENS{{ else }}PERSONAL SPACE · PENS{{ end }}</p>
-    <h1 id="site-hero-title" class="site-hero__title">
-      {{ if $isIndonesian }}Merakit proyek yang <em>berguna.</em>{{ else }}Building practical <em>systems.</em>{{ end }}
-    </h1>
-    <p class="site-hero__lead">
-      {{ if $isIndonesian }}Saya Naufal, mahasiswa Teknik Komputer yang menyukai software, sistem, dan otomasi yang sederhana serta dapat diandalkan.{{ else }}I am Naufal, a Computer Engineering student interested in simple, dependable software, systems, and automation.{{ end }}
-    </p>
-    <div class="site-hero__actions">
-      <a class="site-button site-button--primary" href="https://github.com/nauraafii/ytrvx-module">
-        {{ if $isIndonesian }}Jelajahi YTRVX{{ else }}Explore YTRVX{{ end }}
-        <span aria-hidden="true">↗</span>
-      </a>
-      <a class="site-button site-button--secondary" href="https://github.com/nauraafii">
-        GitHub
-      </a>
-    </div>
-    <ul class="site-hero__tags" aria-label="{{ if $isIndonesian }}Fokus proyek{{ else }}Project focus{{ end }}">
-      <li>Android</li>
-      <li>Systems</li>
-      <li>Automation</li>
-    </ul>
-  </div>
+<main class="home-note" aria-labelledby="home-title">
+  <p class="home-note__label">{{ if $isIndonesian }}Situs pribadi{{ else }}Personal site{{ end }}</p>
 
-  <article class="project-card" aria-labelledby="ytrvx-title">
-    <div class="project-card__header">
-      <p>{{ if $isIndonesian }}PROYEK UNGGULAN{{ else }}FEATURED PROJECT{{ end }}</p>
-      <span class="project-card__pulse" aria-label="{{ if $isIndonesian }}Aktif{{ else }}Active{{ end }}"></span>
-    </div>
-    <h2 id="ytrvx-title">YTRVX</h2>
-    <p>
-      {{ if $isIndonesian }}Fork pribadi untuk membangun YouTube dan YouTube Music yang sudah dipatch.{{ else }}A personal fork for building patched YouTube and YouTube Music.{{ end }}
-    </p>
-    <ul class="project-card__features">
-      <li>Morphe Patches</li>
-      <li>{{ if $isIndonesian }}APK non-root{{ else }}Non-root APKs{{ end }}</li>
-      <li>Magisk &amp; KernelSU</li>
-    </ul>
-    <div class="project-card__links">
-      <a href="https://github.com/nauraafii/ytrvx-module">{{ if $isIndonesian }}Repository{{ else }}Repository{{ end }}</a>
-      <a href="https://github.com/nauraafii/ytrvx-module/releases/latest">Releases</a>
-    </div>
-  </article>
-</section>
+  <h1 id="home-title">{{ if $isIndonesian }}Halo, saya Naufal.{{ else }}Hi, I’m Naufal.{{ end }}</h1>
+
+  <p class="home-note__intro">
+    {{ if $isIndonesian }}Saya mahasiswa Teknik Komputer. Di sini saya menyimpan proyek dan hal-hal kecil yang sedang saya pelajari.{{ else }}I am a Computer Engineering student. This is where I keep projects and small things I am learning.{{ end }}
+  </p>
+
+  <section class="home-note__work" aria-labelledby="current-work-title">
+    <h2 id="current-work-title">{{ if $isIndonesian }}Sedang dikerjakan{{ else }}Current work{{ end }}</h2>
+    <article class="home-note__project" aria-labelledby="ytrvx-title">
+      <h3 id="ytrvx-title">YTRVX</h3>
+      <p>
+        {{ if $isIndonesian }}Fork pribadi untuk membuat build YouTube dan YouTube Music yang sudah dipatch.{{ else }}A personal fork for building patched YouTube and YouTube Music.{{ end }}
+      </p>
+      <p class="home-note__links">
+        <a href="https://github.com/nauraafii/ytrvx-module">Repository</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/nauraafii/ytrvx-module/releases/latest">Releases</a>
+      </p>
+    </article>
+  </section>
+
+  <p class="home-note__elsewhere">
+    {{ if $isIndonesian }}Temukan saya di <a href="https://github.com/nauraafii">GitHub</a>.{{ else }}Find me on <a href="https://github.com/nauraafii">GitHub</a>.{{ end }}
+  </p>
+</main>
