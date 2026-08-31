@@ -1,0 +1,10 @@
+[[main]]
+  name = "YTRVX"
+  url = "https://github.com/nauraafii/ytrvx-module"
+  weight = 10
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/nauraafii"
+  weight = 20

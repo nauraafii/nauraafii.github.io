@@ -11,44 +11,12 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Projects"
-  pageRef = "projects"
+  name = "YTRVX"
+  url = "https://github.com/nauraafii/ytrvx-module"
   weight = 10
-
-[[main]]
-  name = "About"
-  pageRef = "about"
-  weight = 20
-
-
-#[[main]]
-#  name = "Test"
-#  pageRef = "pagTest"
-#  weight = 1000
-
-#[[main]]
-#  identifier = "mastodon"
-#  pre = "mastodon"
-#  weight = 300
-#  url = "https://masto.ai/@blowfish"
 
 [[main]]
   identifier = "github"
   pre = "github"
   url = "https://github.com/nauraafii"
   weight = 400
-
-
-# -- Footer Menu --
-# The footer menu is displayed at the bottom of the page, just before
-# the copyright notice. Configure as per the main menu above.
-
- [[footer]]
-   name = "Tags"
-   pageRef = "tags"
-   weight = 10
-
- [[footer]]
-   name = "Authors"
-   pageRef = "authors"
-   weight = 20

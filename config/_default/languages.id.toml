@@ -1,0 +1,21 @@
+languageCode = "id"
+languageName = "Bahasa Indonesia"
+weight = 1
+title = "Naufal Abrar Afifi"
+
+[params]
+  displayName = "ID"
+  isoCode = "id"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Proyek dan eksperimen pribadi Naufal Abrar Afifi."
+
+[params.author]
+  name = "Naufal Abrar Afifi"
+  email = "afifiabrar778@gmail.com"
+  image = "https://github.com/nauraafii.png?size=256"
+  headline = "Mahasiswa Teknik Komputer di PENS."
+  bio = "Membangun proyek praktis di software, sistem, dan otomasi."
+  links = [
+    { github = "https://github.com/nauraafii" },
+  ]
