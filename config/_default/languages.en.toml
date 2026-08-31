@@ -15,7 +15,7 @@ title = "Naufal Abrar Afifi"
   email = "afifiabrar778@gmail.com"
   image = "https://github.com/nauraafii.png?size=256"
   headline = "Computer Engineering student at PENS."
-  bio = "Building practical projects in software, systems, and automation."
+  bio = "A Computer Engineering student at PENS keeping projects and learning notes."
   links = [
    { github = "https://github.com/nauraafii" },
   ]
