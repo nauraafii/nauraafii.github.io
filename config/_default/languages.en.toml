@@ -1,6 +1,6 @@
 languageCode = "en"
 languageName = "English"
-weight = 1
+weight = 2
 title = "Naufal Abrar Afifi"
 
 [params]
@@ -8,15 +8,14 @@ title = "Naufal Abrar Afifi"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "img/blowfish_logo_transparent.png"
-  description = "A powerful, lightweight theme for Hugo."
+  description = "Personal projects and experiments by Naufal Abrar Afifi."
 
 [params.author]
   name = "Naufal Abrar Afifi"
   email = "afifiabrar778@gmail.com"
-  image = "img/blowfish_logo.png"
-  headline = "Computer Engineering Student at PENS."
-  bio = "Pragmatic tech enthusiast focusing on System Optimization, Linux, and Automation."
+  image = "https://github.com/nauraafii.png?size=256"
+  headline = "Computer Engineering student at PENS."
+  bio = "Building practical projects in software, systems, and automation."
   links = [
    { github = "https://github.com/nauraafii" },
   ]
