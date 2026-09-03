@@ -1,4 +1,5 @@
 .home-note {
+  box-sizing: border-box;
   width: min(100%, 44rem);
   margin-inline: auto;
   padding: clamp(4rem, 11vw, 8rem) 1.25rem clamp(5rem, 12vw, 9rem);

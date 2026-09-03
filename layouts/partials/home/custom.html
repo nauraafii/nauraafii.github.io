@@ -1,24 +1,34 @@
 {{ $isIndonesian := eq .Site.Language.Lang "id" }}
-<main class="home-note" aria-labelledby="home-title">
+<div class="home-note" aria-labelledby="home-title">
   <p class="home-note__label">{{ if $isIndonesian }}Situs pribadi{{ else }}Personal site{{ end }}</p>
 
   <h1 id="home-title">{{ if $isIndonesian }}Halo, saya Naufal.{{ else }}Hi, I’m Naufal.{{ end }}</h1>
 
   <p class="home-note__intro">
-    {{ if $isIndonesian }}Saya mahasiswa Teknik Komputer. Di sini saya menyimpan proyek dan hal-hal kecil yang sedang saya pelajari.{{ else }}I am a Computer Engineering student. This is where I keep projects and small things I am learning.{{ end }}
+    {{ if $isIndonesian }}Saya mahasiswa Teknik Komputer di PENS. Di sini saya menyimpan proyek yang saya pakai, rawat, dan pelajari.{{ else }}I am a Computer Engineering student at PENS. This is where I keep the projects I use, maintain, and learn from.{{ end }}
   </p>
 
   <section class="home-note__work" aria-labelledby="current-work-title">
-    <h2 id="current-work-title">{{ if $isIndonesian }}Sedang dikerjakan{{ else }}Current work{{ end }}</h2>
+    <h2 id="current-work-title">{{ if $isIndonesian }}Proyek{{ else }}Projects{{ end }}</h2>
     <article class="home-note__project" aria-labelledby="ytrvx-title">
       <h3 id="ytrvx-title">YTRVX</h3>
       <p>
-        {{ if $isIndonesian }}Fork pribadi untuk membuat build YouTube dan YouTube Music yang sudah dipatch.{{ else }}A personal fork for building patched YouTube and YouTube Music.{{ end }}
+        {{ if $isIndonesian }}Proyek personal berbasis <a href="https://github.com/j-hc/revanced-magisk-module">j-hc/revanced-magisk-module</a>. Perubahan saya berfokus pada konfigurasi build, dokumentasi, dan penyesuaian workflow sederhana.{{ else }}A personal project based on <a href="https://github.com/j-hc/revanced-magisk-module">j-hc/revanced-magisk-module</a>. My changes focus on build configuration, documentation, and small workflow adjustments.{{ end }}
       </p>
       <p class="home-note__links">
-        <a href="https://github.com/nauraafii/ytrvx-module">Repository</a>
+        <a href="https://github.com/nauraafii/ytrvx-module">{{ if $isIndonesian }}Repositori{{ else }}Repository{{ end }}</a>
         <span aria-hidden="true">·</span>
-        <a href="https://github.com/nauraafii/ytrvx-module/releases/latest">Releases</a>
+        <a href="https://github.com/nauraafii/ytrvx-module/releases/latest">{{ if $isIndonesian }}Rilis{{ else }}Releases{{ end }}</a>
+      </p>
+    </article>
+
+    <article class="home-note__project" aria-labelledby="website-title">
+      <h3 id="website-title">{{ if $isIndonesian }}Website pribadi{{ else }}Personal website{{ end }}</h3>
+      <p>
+        {{ if $isIndonesian }}Website bilingual berbasis Hugo dan Blowfish, dengan CSS khusus dan deployment otomatis melalui GitHub Pages.{{ else }}A bilingual site built with Hugo and Blowfish, with custom CSS and automated deployment through GitHub Pages.{{ end }}
+      </p>
+      <p class="home-note__links">
+        <a href="https://github.com/nauraafii/nauraafii.github.io">{{ if $isIndonesian }}Kode sumber{{ else }}Source code{{ end }}</a>
       </p>
     </article>
   </section>
@@ -26,4 +36,4 @@
   <p class="home-note__elsewhere">
     {{ if $isIndonesian }}Temukan saya di <a href="https://github.com/nauraafii">GitHub</a>.{{ else }}Find me on <a href="https://github.com/nauraafii">GitHub</a>.{{ end }}
   </p>
-</main>
+</div>
