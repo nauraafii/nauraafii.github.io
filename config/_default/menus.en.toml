@@ -11,12 +11,13 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "YTRVX"
-  url = "https://github.com/nauraafii/ytrvx-module"
+  name = "Projects"
+  url = "/en/#projects"
   weight = 10
 
 [[main]]
   identifier = "github"
+  name = "GitHub"
   pre = "github"
   url = "https://github.com/nauraafii"
   weight = 400
