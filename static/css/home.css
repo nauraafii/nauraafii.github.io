@@ -1,8 +1,9 @@
 .home-note {
   box-sizing: border-box;
-  width: min(100%, 44rem);
+  width: min(100%, 60rem);
   margin-inline: auto;
-  padding: clamp(2.5rem, 7vw, 5rem) 1.25rem 4rem;
+  padding: clamp(2rem, 5vw, 4rem) 1.25rem 4rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
 }
 
 .home-note__label,
@@ -15,13 +16,13 @@
 }
 
 .home-note h1 {
-  max-width: 13ch;
+  max-width: 18ch;
   margin: 0.75rem 0 1.35rem;
   color: rgb(var(--color-neutral-900));
-  font-size: clamp(2.6rem, 7vw, 4.8rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
   letter-spacing: -0.055em;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .dark .home-note h1 {
@@ -45,6 +46,9 @@
 }
 
 .home-note__work {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
   margin-top: clamp(2.5rem, 6vw, 4rem);
   scroll-margin-top: 7rem;
   padding-top: 1.25rem;
@@ -56,11 +60,15 @@
 }
 
 .home-note__project {
-  padding: 1.5rem 0 1.65rem;
+  padding: 1.5rem;
+  border: 1px solid rgb(var(--color-neutral-300));
+  border-radius: 0.75rem;
+  background: rgb(var(--color-neutral-100));
   border-bottom: 1px solid rgb(var(--color-neutral-200));
 }
 
 .dark .home-note__project {
+  background: rgb(var(--color-neutral-800));
   border-color: rgb(var(--color-neutral-700));
 }
 
@@ -141,6 +149,7 @@
 }
 
 @media (max-width: 36rem) {
+  .home-note__work { grid-template-columns: minmax(0, 1fr); }
   .home-note {
     padding-inline: 1rem;
   }
@@ -149,3 +158,8 @@
     font-size: clamp(2.45rem, 13vw, 3.35rem);
   }
 }
+
+.home-note__work > h2 { grid-column: 1 / -1; font-size: 1.1rem; }
+.home-note__actions a { text-decoration: none; }
+.home-note__actions a:first-child { background: rgb(var(--color-neutral-900)); color: rgb(var(--color-neutral-50)); border-color: transparent; }
+.dark .home-note__actions a:first-child { background: rgb(var(--color-neutral-50)); color: rgb(var(--color-neutral-900)); }

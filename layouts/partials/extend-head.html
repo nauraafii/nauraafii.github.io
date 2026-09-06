@@ -1,2 +1,3 @@
 {{/* Homepage styling is loaded explicitly because it is site-owned, not theme-owned. */}}
-<link rel="stylesheet" href="{{ "css/home.css" | relURL }}">
+{{ $css := readFile "static/css/home.css" | resources.FromString "css/home.css" | fingerprint "sha256" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
