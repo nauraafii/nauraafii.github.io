@@ -2,8 +2,6 @@
 
 Personal portfolio for Naufal Abrar Afifi, a Computer Engineering student at PENS.
 
-> Portofolio pribadi Naufal Abrar Afifi, mahasiswa Teknik Komputer di PENS.
-
 The site is available in [Bahasa Indonesia](https://nauraafii.github.io/) and [English](https://nauraafii.github.io/en/).
 
 ## Stack
@@ -51,9 +49,3 @@ When updating a project description, update both language versions in `custom.ht
 - Preview `/` and `/en/` with `hugo server`.
 - Check navigation, links, theme switching, and accessibility controls on a narrow and wide screen.
 - Run `hugo --minify`, matching the build command used for deployment.
-
-## Menjalankan dan mengedit
-
-Gunakan Git dan Hugo Extended **0.155.3**, lalu ikuti perintah di atas. Teks utama halaman depan ada di `layouts/partials/home/custom.html`; perbarui versi Indonesia dan English bersamaan. CSS khusus ada di `static/css/home.css`.
-
-Sebelum dipublikasikan, cek kedua bahasa, tampilan mobile dan desktop, tautan, serta kontrol aksesibilitas. Jalankan `hugo --minify` untuk memeriksa build. Perubahan yang di-push ke `main` akan memicu deployment GitHub Pages.
